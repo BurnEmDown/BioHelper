@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:borderWidth="0dp"
+    tools:context="com.example.android.biohelper.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/chart"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/temp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Temperatue: "
+            android:layout_margin="@dimen/fab_margin"/>
+
+        <TextView
+            android:id="@+id/temp_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=""
+            android:layout_toRightOf="@id/temp_text"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/ph_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current PH: "
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_below="@id/temp_text"/>
+
+        <TextView
+            android:id="@+id/ph_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=""
+            android:layout_toRightOf="@id/ph_text"
+            android:layout_below="@id/temp_text"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/ec_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current EC: "
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_below="@id/ph_text"/>
+
+        <TextView
+            android:id="@+id/ec_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=""
+            android:layout_toRightOf="@id/ec_text"
+            android:layout_below="@id/ph_text"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/pres_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Pressure: "
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_below="@id/ec_text"/>
+
+        <TextView
+            android:id="@+id/pres_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text=""
+            android:layout_toRightOf="@id/pres_text"
+            android:layout_below="@id/ec_text"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.LinearLayoutCompat>
