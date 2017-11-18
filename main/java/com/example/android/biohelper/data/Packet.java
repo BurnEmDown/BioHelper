@@ -19,16 +19,14 @@ public class Packet {
     public float m_temperature;
     public float m_ph;
     public float m_ec;
-    public float m_pressure;
 
-    public Packet(float temperature, float ph, float ec, float pressure)
+    public Packet(float temperature, float ph, float ec)
     {
 
         this.m_dateTime = dt;
         this.m_temperature = temperature;
         this.m_ph = ph;
         this.m_ec = ec;
-        this.m_pressure = pressure;
     }
 
     public long getTime()
@@ -49,11 +47,6 @@ public class Packet {
     public float getEC()
     {
         return this.m_ec;
-    }
-
-    public float getPressure()
-    {
-        return this.m_pressure;
     }
 
 
