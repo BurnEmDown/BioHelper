@@ -73,22 +73,13 @@
             android:layout_below="@id/ph_text"/>
 
         <TextView
-            android:textStyle="bold"
-            android:id="@+id/pres_text"
+            android:id="@+id/tempTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Current Pressure: "
-            android:layout_margin="@dimen/fab_margin"
-            android:layout_below="@id/ec_text"/>
-
-        <TextView
-            android:id="@+id/pres_display"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text=""
-            android:layout_toRightOf="@id/pres_text"
-            android:layout_below="@id/ec_text"/>
+            android:layout_below="@+id/ec_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="73dp"
+            android:text="TextView" />
 
     </RelativeLayout>
 
